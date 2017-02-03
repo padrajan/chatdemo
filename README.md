@@ -23,9 +23,9 @@ Are we using <b>Google's Protocol Buffer</b> for data design?
    - Yes.
    - Why & Why not JSON/GSON? 
    
-      # As per requirement we have to provide json as output. But json/gson is too slow to handle in Android environment. So we are using Google's protocol buffer, construct data design using that and  store text data on this. 
-      # Conversion between POJO to JSON is painstaking, While in Proto data is defined as POJO. 
-      # Wire Transfer is faster in bytestream case than json/string.
+      * As per requirement we have to provide json as output. But json/gson is too slow to handle in Android environment. So we are using Google's protocol buffer, construct data design using that and  store text data on this. 
+      * Conversion between POJO to JSON is painstaking, While in Proto data is defined as POJO. 
+      * Wire Transfer is faster in bytestream case than json/string.
       
    - What is protoBuf?
      
