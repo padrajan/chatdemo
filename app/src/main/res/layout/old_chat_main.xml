@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chat_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.show.text.TextMainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/toppanel1"
+        android:background="#ffccb3"
+        android:layout_above="@+id/bottompanel1">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/bottompanel1"
+        android:background="#ff9966"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <EitText
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/customEditText"
+            android:background="#ffeee6"
+            android:gravity="top"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/button"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/button"
+            android:background="@mipmap/ic_send_launcher"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>

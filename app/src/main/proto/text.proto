@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option java_package = "com.show.proto";
+option java_outer_classname = "TextProto";
+option java_multiple_files = true;
+
+message Message {
+
+    repeated string text = 1; //single message is converted to repeated text values
+    repeated string emoticon = 2;   //repeated values of emoticon
+    repeated string mention = 3;    //repeated values of metions
+    repeated Link link = 4;         //repeated values of link (title and url)
+
+    message Link {
+        string url = 1;
+        string title = 2;
+    }
+}
