@@ -1,8 +1,8 @@
-package com.show.text;
+package com.chat.demo;
 
-import com.show.proto.Message;
-import com.show.proto.Message.Builder;
-import com.show.proto.Message.Link;
+import com.chat.demo.Message;
+import com.chat.demo.Message.Builder;
+import com.chat.demo.Message.Link;
 
 import java.util.Iterator;
 import java.util.List;
@@ -53,7 +53,7 @@ public class ParserHandler {
         message.addText("");
     }
 
-    public void checkMessage(Message.Builder message, int time){
+    public void checkMessage(Message.Builder message){
         List<String> words = message.getTextList();
         Iterator<String> stringIterator = words.iterator();
         while (stringIterator.hasNext()){
@@ -63,7 +63,7 @@ public class ParserHandler {
                 checkForMention(word);
             }
         }
-        callbacks.printThread(time); // FIXME: 2/2/17
+        callbacks.printThread(1000); // FIXME: 2/2/17
     }
 
     private boolean checkForWebUrl(String text){

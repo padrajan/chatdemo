@@ -1,4 +1,4 @@
-package com.show.text;
+package com.chat.demo;
 
 import android.graphics.Color;
 import android.os.Handler;
@@ -55,7 +55,7 @@ public class TextMainActivity extends AppCompatActivity implements Callbacks {
                     case MotionEvent.ACTION_UP:{
                         btn.setBackgroundColor(Color.TRANSPARENT);
                         es.setText("");
-                        parserHandler.checkMessage(parserHandler.getMessage(), 1000);
+                        parserHandler.checkMessage(parserHandler.getMessage());
                         break;
                     }
                 }

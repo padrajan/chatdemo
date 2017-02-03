@@ -1,4 +1,4 @@
-package com.show.text;
+package com.chat.demo;
 
 /**
  * Created by padmanabha-1058 on 2/2/17.

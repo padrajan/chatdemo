@@ -1,6 +1,5 @@
-package com.show.text;
+package com.chat.demo;
 
-import com.show.proto.Message;
 
 /**
  * Created by padmanabha-1058 on 2/2/17.
